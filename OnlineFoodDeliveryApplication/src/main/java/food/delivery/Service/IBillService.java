@@ -7,11 +7,11 @@ import food.delivery.Model.Bill;
 
 public interface IBillService {
 	public Bill addBill(Bill bill);
-	public Bill updateBill(Bill bill);
-	public Bill removeBill(Bill bill);
-	public Bill viewBill(Bill bill);
-	public List<Bill> viewBills(LocalDate startDate,LocalDate enDate);
-	public List<Bill> viewBills(String custId);
-	public double calculateTotalCost(Bill bill);
+	public Bill updateBill(Bill bill)throws Exception;
+	public Bill removeBill(Bill bill)throws Exception;
+	public Bill viewBill(Bill bill)throws Exception;
+	public List<Bill> viewBills(LocalDate startDate,LocalDate enDate)throws Exception;
+	public List<Bill> viewBills(String custId)throws Exception;
+	public double calculateTotalCost(Bill bill)throws Exception;
 
 }
