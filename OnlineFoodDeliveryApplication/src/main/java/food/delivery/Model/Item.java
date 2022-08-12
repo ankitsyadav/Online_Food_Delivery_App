@@ -24,10 +24,10 @@ public class Item {
 	private String itemName;
 	
 	@NotNull(message = "category should not be null")
+	@OneToOne(cascade = CascadeType.ALL)
 	private Category category;
 	
 	@NotNull(message = "quantity should not be null")
-	@OneToOne(cascade = CascadeType.ALL)
 	private Integer quantity;
 	
 	@NotNull(message = "cost should not be null")
