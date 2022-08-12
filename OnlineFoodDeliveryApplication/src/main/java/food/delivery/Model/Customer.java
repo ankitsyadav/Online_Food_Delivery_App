@@ -1,20 +1,28 @@
 package food.delivery.Model;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
+import javax.validation.constraints.Max;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Customer {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String customerId;
+	@NonNull
 	private String firstName;
+	@NonNull
 	private String lastName;
+	
+	@NonNull
+	@Max(100)
 	private int age;
+	
+	@NonNull
 	private String gender;
 	private String mobileNumber;
 	private Address address;
