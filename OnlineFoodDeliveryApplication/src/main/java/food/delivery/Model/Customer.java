@@ -2,6 +2,8 @@ package food.delivery.Model;
 
 import javax.persistence.Entity;
 
+import org.apache.tomcat.jni.Address;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
