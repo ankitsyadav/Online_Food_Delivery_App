@@ -3,8 +3,7 @@ package food.delivery.Model;
 import java.util.Objects;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
+import javax.validation.constraints.*;
 
 import lombok.*;
 
@@ -39,7 +38,8 @@ public class Address {
 	private String country;
 	
 	@NotNull
-	@Pattern(regexp="^[1-9][0-9]{5}$", message = "Invalid pincode")
+	@Size(min=6,max=6,message="Invalid Pincode")
+	@Pattern(regexp="[1-9][0-9]{5}", message = "Invalid pincode")
 	private String pincode;
 
 	@Override
