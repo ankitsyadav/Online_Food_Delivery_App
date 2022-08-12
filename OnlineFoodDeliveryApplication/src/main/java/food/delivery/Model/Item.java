@@ -33,6 +33,7 @@ public class Item {
 	private Double cost;
 	
 	@NotNull(message = "cost should not be null")
+	@ManyToMany(cascade = CascadeType.ALL)
 	private List<Restaurant> restaurants;
 	
 	

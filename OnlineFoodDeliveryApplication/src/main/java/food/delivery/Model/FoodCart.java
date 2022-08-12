@@ -2,10 +2,12 @@ package food.delivery.Model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
@@ -27,6 +29,7 @@ public class FoodCart {
 	@NotNull(message = "customer shoud not be null")
 	private Customer customer;
 	@NotNull(message = "itemList shoud not be null")
+	@OneToMany(cascade = CascadeType.ALL)
 	private List<Item> itemList;
 
 }

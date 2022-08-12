@@ -2,10 +2,12 @@ package food.delivery.Model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
@@ -27,6 +29,7 @@ public class OrderDetails {
 	@NotNull(message = "order Date shoud not be null")
 	private LocalDateTime orderDate;
 	@NotNull(message = "cart shoud not be null")
+	@OneToOne(cascade = CascadeType.ALL)
 	private FoodCart cart;
 
 }
