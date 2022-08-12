@@ -2,9 +2,7 @@ package food.delivery.Model;
 
 import javax.persistence.*;
 import javax.validation.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 import lombok.*;
 
@@ -13,6 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Customer {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String customerId;
@@ -37,6 +36,7 @@ public class Customer {
 	private String mobileNumber;
 	
 	@NonNull
+	@OneToOne(cascade=CascadeType.ALL)
 	private Address address;
 
 }
