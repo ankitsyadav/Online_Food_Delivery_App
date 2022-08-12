@@ -18,7 +18,6 @@ public class Address {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "address_id")
 	private String addressId;
 	
 	@NotNull(message = "building shoud not be null")
