@@ -42,10 +42,6 @@ public class Address {
 	@Pattern(regexp="[1-9][0-9]{5}", message = "Invalid pincode")
 	private String pincode;
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(addressId, area, buildingName, city, country, pincode, state, streetNo);
-	}
 
 	
 	
