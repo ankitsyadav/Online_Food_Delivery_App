@@ -25,7 +25,6 @@ public class Customer {
 	private String lastName;
 	
 	@NonNull
-	@Max(100)
 	private int age;
 	
 	@NonNull
