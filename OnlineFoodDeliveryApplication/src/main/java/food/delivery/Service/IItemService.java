@@ -10,6 +10,7 @@ import food.delivery.Model.Restaurant;
 public interface IItemService {
 	public Item addItem(Item item);
 	public Item updateItem(Item item);
+	public Item removeItem(Item item);
 	public Item viewItem(Item item);
 	public List<Item> viewAllItem(Category cat);
 	public List<Item> viewAllItem(Restaurant res);
