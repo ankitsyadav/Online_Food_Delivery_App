@@ -14,7 +14,7 @@ import lombok.*;
 public class Category {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	String catId;
+	int catId;
 	@NotNull(message = "category should not be null")
 	String categoryName;
 }

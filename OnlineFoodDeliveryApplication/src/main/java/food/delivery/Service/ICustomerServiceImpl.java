@@ -31,4 +31,10 @@ public class ICustomerServiceImpl implements ICustomerService {
 		return null;
 	}
 
+	@Override
+	public Customer viewCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

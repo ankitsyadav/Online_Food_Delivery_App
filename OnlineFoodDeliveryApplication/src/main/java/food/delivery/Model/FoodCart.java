@@ -25,7 +25,7 @@ import lombok.ToString;
 public class FoodCart {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public String cartId;
+	public int cartId;
 	@NotNull(message = "customer shoud not be null")
 	private Customer customer;
 	@NotNull(message = "itemList shoud not be null")

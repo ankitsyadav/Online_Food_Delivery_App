@@ -14,7 +14,7 @@ public class Customer {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String customerId;
+	private int customerId;
 	
 	@NonNull
 	@Pattern(regexp="[a-z]{3,12}", message="Last must Not Contain Special Character")
@@ -25,7 +25,6 @@ public class Customer {
 	private String lastName;
 	
 	@NonNull
-	@Max(100)
 	private int age;
 	
 	@NonNull

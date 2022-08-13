@@ -25,7 +25,7 @@ import lombok.ToString;
 public class OrderDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer orderId;
+	private int orderId;
 	@NotNull(message = "order Date shoud not be null")
 	private LocalDateTime orderDate;
 	@NotNull(message = "cart shoud not be null")

@@ -1,6 +1,6 @@
 package food.delivery.Model;
 
-import java.util.Objects;
+import java.util.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
@@ -17,7 +17,7 @@ public class Address {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String addressId;
+	private int addressId;
 	
 	@NotNull(message = "building shoud not be null")
 	private String buildingName;
