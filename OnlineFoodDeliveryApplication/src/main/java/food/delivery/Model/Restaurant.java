@@ -21,7 +21,7 @@ import lombok.ToString;
 public class Restaurant {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int restaurantId;
+	private Integer restaurantId;
 	@NotNull
 	private String restaurantName;
 	@NotNull

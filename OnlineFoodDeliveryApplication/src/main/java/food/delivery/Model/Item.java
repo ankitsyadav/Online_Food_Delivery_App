@@ -18,7 +18,7 @@ public class Item {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int itemId;
+	private Integer itemId;
 	
 	@NotNull(message = "item name should not be null")
 	private String itemName;

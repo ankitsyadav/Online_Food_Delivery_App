@@ -17,7 +17,7 @@ public class Address {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int addressId;
+	private Integer addressId;
 	
 	@NotNull(message = "building shoud not be null")
 	private String buildingName;
