@@ -44,4 +44,10 @@ public class IItemServiceImpl implements IItemService {
 		return null;
 	}
 
+	@Override
+	public Item removeItem(Item item) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
