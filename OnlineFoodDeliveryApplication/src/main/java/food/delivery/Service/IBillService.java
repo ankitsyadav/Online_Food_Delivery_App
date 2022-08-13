@@ -11,7 +11,7 @@ public interface IBillService {
 	public Bill removeBill(Bill bill)throws Exception;
 	public Bill viewBill(Bill bill)throws Exception;
 	public List<Bill> viewBills(LocalDate startDate,LocalDate enDate)throws Exception;
-	public List<Bill> viewBills(String custId)throws Exception;
+	public List<Bill> viewBills(int custId)throws Exception;
 	public double calculateTotalCost(Bill bill)throws Exception;
 
 }

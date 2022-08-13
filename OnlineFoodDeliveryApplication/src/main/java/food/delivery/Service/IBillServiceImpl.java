@@ -39,7 +39,7 @@ public class IBillServiceImpl implements IBillService {
 	}
 
 	@Override
-	public List<Bill> viewBills(String custId) {
+	public List<Bill> viewBills(int custId) {
 		// TODO Auto-generated method stub
 		return null;
 	}

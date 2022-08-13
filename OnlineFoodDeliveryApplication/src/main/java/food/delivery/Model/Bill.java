@@ -24,7 +24,7 @@ import lombok.ToString;
 public class Bill {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String billId;
+	private Integer billId;
 	@NotNull(message = "date shoud not be null")
 	private LocalDateTime billDate;
 	@NotNull(message = "order shoud not be null")

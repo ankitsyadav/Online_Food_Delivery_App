@@ -59,7 +59,7 @@ public class BillController {
 	}
 	
 	@GetMapping("/view/{customerId}")
-	public ResponseEntity<List<Bill>> viewBill(@PathVariable String customerId ) throws Exception{
+	public ResponseEntity<List<Bill>> viewBill(@PathVariable Integer customerId ) throws Exception{
 		IBillService billService=new IBillServiceImpl();
 		List<Bill> bills=billService.viewBills(customerId);
 		return new ResponseEntity<List<Bill>>(bills,HttpStatus.OK);
