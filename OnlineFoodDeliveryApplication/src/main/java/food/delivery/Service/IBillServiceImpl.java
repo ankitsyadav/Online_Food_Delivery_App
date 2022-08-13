@@ -39,11 +39,7 @@ public class IBillServiceImpl implements IBillService {
 	}
 
 	@Override
-<<<<<<< HEAD
 	public List<Bill> viewBills(int custId) throws Exception {
-=======
-	public List<Bill> viewBills(int custId) {
->>>>>>> 15fbf0fcb27194d9d7fd748f5f5c206724faf442
 		// TODO Auto-generated method stub
 		return null;
 	}
